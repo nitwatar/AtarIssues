@@ -61,7 +61,6 @@ public class PercentageCustomViewAdapter extends
         holder.hbv_my.invalidate();
     }
 
-
     public static class ViewHolder extends RecyclerView.ViewHolder {
         public ViewHolder(View v) {
             super(v);

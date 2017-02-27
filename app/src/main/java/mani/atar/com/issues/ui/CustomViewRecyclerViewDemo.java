@@ -23,8 +23,8 @@ public class CustomViewRecyclerViewDemo extends AppCompatActivity {
         mRecyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         mLayoutManager = new LinearLayoutManager(CustomViewRecyclerViewDemo.this);
         mRecyclerView.setLayoutManager(mLayoutManager);
+        mRecyclerView.setHasFixedSize(true);
         mAdapter = new PercentageCustomViewAdapter(this);
-        mRecyclerView.getRecycledViewPool().setMaxRecycledViews(mAdapter.getItemViewType(0), 10);
 
         mRecyclerView.setAdapter(mAdapter);
 

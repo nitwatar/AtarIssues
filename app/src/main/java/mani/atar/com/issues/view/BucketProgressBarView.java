@@ -277,7 +277,7 @@ public class BucketProgressBarView extends View {
             mBarRect.right = getWidth() - getPaddingRight() - mHalfStrokeWidth;
             canvas.drawRect(mBarRect, mText2BgPaint);
             canvas.drawText(mText2, mBarRect.left + (mBarRect.right - mBarRect.left) / 2 - (mText2Rect.right - mText2Rect.left) / 2, mText2Rect.top, mText2Paint);
-
+           mBarRect.left = 0;
         }
 
     }
